@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #24252a;
+}
+
+body {
+    height: 100vh;
+    background-color: #a9aaac;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: 90%;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
+    color: #24252a;
+}
+
+li:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.publicaciones {
+    position: relative;
+    color: white;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #47b10a ;
+    text-align: center;
+    background-color: #24252a;
+}
+
+.ul-second > li:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.publicaciones:hover > .ul-second {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .logo-danicodex {
+        display: none;
+    }
+}
+
+/*ESTILOS PARA GESTION HORARIO*/
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Esto centra verticalmente en la página */
+    margin-top: 300px;
+    font-size: 35px;
+}
+
+/* Estilo para el formulario */
+#fichaMedicaForm {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    max-width: 400px; /* Aumenta el ancho del formulario */
+    margin: 100px; /* Agrega margen alrededor del formulario */
+}
+
+/* Estilo para los encabezados */
+h1, h2 {
+    text-align: center;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo para las celdas de la tabla */
+table, th, td {
+    border: 1px solid #999;
+}
+
+/* Estilo para los botones */
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*Para el login*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Centra el contenido */
+    width: 90%;
+}
+
+h2 {
+    color: #994593;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el formulario dentro del contenedor */
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Agrega aquí tus estilos CSS */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav img.logo-danicodex {
+    height: 40px;
+    width: 70px;
+    height: 70px;
+}
+
+nav ul.cont-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+nav ul.cont-ul li {
+    position: relative;
+}
+
+nav ul.cont-ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul.cont-ul li a:hover {
+    background-color: #575757;
+}
+
+nav ul.cont-ul .publicaciones:hover .ul-second {
+    display: block;
+}
+
+nav ul.cont-ul .ul-second {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    top: 100%;
+    left: 0;
+}
+
+nav ul.cont-ul .ul-second li a {
+    white-space: nowrap;
+}
+
+.login-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 35px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #994593;
+}
+
+
+form button, form input[type="submit"] {
+    padding: 12px 24px;
+    font-size: 20px;
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 6px; /* Añade esquinas redondeadas */
+    box-shadow: 0 2px 4px #994593; /* Añade sombra */
+    margin-right: 20px;
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  
+input[type="text"],
+input[type="password"]{
+  font-size: 25px; /* Ajusta el tamaño de la fuente según sea necesario */
+  padding: 8px; /* Añade un relleno para mayor espacio alrededor del texto */
+  margin-top: -50px;
+}
+  
+#content {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+  }
+  
+  .imag {
+    margin-top: 30px;
+    width: 700px; /* Ancho de la imagen */
+    height: 500px; /* Altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
+    margin-bottom: 20px; /* Espacio inferior entre la imagen y el título */
+  }
+  
+  h1 {
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-top: 20px; /* Espacio superior entre el título y la imagen */
+    font-size: 34px;
+    color: #994593; /* Color morado */
+    margin-top: 20px;
+  }

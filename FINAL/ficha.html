@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha Médica</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes estilos, puedes incluir el archivo CSS aquí -->
+  </head>
+  <body>
+    <div class="container">
+      <h3>FICHA EMITIDA</h3>
+      <form action="">
+        <!-- Display patient's name -->
+        <label for="patientName">Nombre del Asegurado:</label>
+        <h5 id="patientName"></h5>
+        
+        <!-- Display selected specialty -->
+        <label for="specialty">Especialidad:</label>
+        <input type="text" id="specialty" readonly /><br /><br />
+
+        <!-- Display selected doctor -->
+        <label for="doctor">Médico:</label>
+        <input type="text" id="doctor" readonly /><br /><br />
+
+        <!-- Display selected day -->
+        <label for="day">Día:</label>
+        <input type="text" id="day" readonly /><br /><br />
+
+        <!-- Display additional information such as consultorio, dirección, turno, etc. -->
+        <label for="consultorio">Consultorio:</label>
+        <input type="text" id="consultorio" readonly /><br /><br />
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" readonly /><br /><br />
+
+        <label for="turno">Turno:</label>
+        <input type="text" id="turno" readonly /><br /><br />
+
+        <!-- Display selected presentation time -->
+        <label for="horaPresentacion">Hora de Presentación:</label>
+        <input type="text" id="horaPresentacion" readonly /><br /><br />
+
+        <label for="nroficha">Nro Ficha:</label>
+        <input type="text" id="nroficha" readonly /><br /><br />
+
+        <button type="button" onclick="printFicha()">Imprimir</button>
+        <button type="button" onclick="editFicha()">Editar</button>
+        <button type="button" onclick="goToIndex()">Salir</button>
+      </form>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
